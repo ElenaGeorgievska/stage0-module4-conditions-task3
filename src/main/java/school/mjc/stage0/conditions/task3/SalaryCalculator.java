@@ -2,7 +2,7 @@ package school.mjc.stage0.conditions.task3;
 
 public class SalaryCalculator {
     public void calculateSalary(int salary) {
-        if (salary <= 10000) System.out.println(salary * 85 / 100d);    //100-15% =85%
+        if (salary <= 10000 && salary > 0) System.out.println(salary * 85 / 100d);    //100-15% =85%
 
         if (salary > 10000 && salary <= 20000) System.out.println(salary * 82 / 100d);  //100-18% = 82%
 
@@ -13,7 +13,7 @@ public class SalaryCalculator {
 
     public static void main(String[] args) {
         SalaryCalculator sc = new SalaryCalculator();
-        sc.calculateSalary(35000);
+        sc.calculateSalary(-1);
     }
 
     //Implement the program that will consume salary from method argument as input of an employee
